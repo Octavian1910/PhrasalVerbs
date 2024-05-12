@@ -265,9 +265,9 @@ window.onload = function () {
         var cell2 = row.insertCell(1);
         var cell3 = row.insertCell(2);
 
-        cell1.classList.add("border", "bold", "text-3xl" , "font-mono");
-        cell2.classList.add("border","bold", "text-3xl","font-mono");
-        cell3.classList.add("border","bold", "text-3xl","font-mono");
+        cell1.classList.add("border", "bold", "text-3xl" , "font-mono", "p-5");
+        cell2.classList.add("border","bold", "text-3xl","font-mono", "p-5");
+        cell3.classList.add("border","bold", "text-3xl","font-mono", "p-5");
 
         cell1.innerHTML = expresion;
         cell2.innerHTML = translation;
