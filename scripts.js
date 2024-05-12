@@ -293,10 +293,12 @@ window.onload = function () {
         var text=document.createElement("p");
         text.type="text";
         text.textContent="Cum se traduce in romana expresia "+phrasalVerbs[x][0] ;
+        text.classList.add("text-2xl" , "font-mono", "p-2");
 
         var example=document.createElement("p");
         example.type="text";
         example.textContent="" ;
+        example.classList.add("text-2xl" , "font-mono", "p-2");
     
         var input = document.createElement("input");
         input.type = "text";
