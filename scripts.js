@@ -1,5 +1,6 @@
 
 
+
 window.onload = function () {
     const phrasalVerbs = [
         ["act up", "a face nazuri", "The computer is acting up again."],
@@ -314,7 +315,7 @@ window.onload = function () {
         buttonContainer.classList.add("button-container");
     
         var generateButton = document.createElement("button");
-        generateButton.innerHTML = "&#9858;";
+        generateButton.innerHTML = "Next &#9858;";
         generateButton.classList.add("verify");
 
         generateButton.addEventListener("click",function()
@@ -363,8 +364,8 @@ window.onload = function () {
         });
     
         buttonContainer.appendChild(verifyButton);
-        buttonContainer.appendChild(closeButton);
         buttonContainer.appendChild(generateButton);
+        buttonContainer.appendChild(closeButton);
     
         popup.appendChild(text);
         popup.appendChild(example);

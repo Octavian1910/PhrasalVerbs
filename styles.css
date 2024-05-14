@@ -21,8 +21,9 @@
 }
 
 .input {
-    width: calc(100% - 20px);
-    margin-bottom: 20px;
+    width: 60%;
+    margin-top: 40px;
+    margin-bottom: 80px;
     padding: 10px;
     color: black;
     border: 1px solid #ccc;
@@ -31,20 +32,22 @@
 }
 
 .input_correct {
-    width: calc(100% - 20px);
     background-color: #69e26d;
     color: black;
-    margin-bottom: 20px;
+    width: 60%;
+    margin-top: 40px;
+    margin-bottom: 80px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
 .input_incorrect {
-    width: calc(100% - 20px);
     background-color: #e26969;
+    width: 60%;
     color: black;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 80px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -59,11 +62,13 @@
     width: 100%;
 }
 
-.verify, .close {
+.verify, .close  ,.next{
     background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 10px 20px;
+    border-radius: 15px;
+    padding: 10px 60px;
+    margin-left: 30ox;
     border-radius: 4px;
     margin: 0 10px;
     cursor: pointer;
