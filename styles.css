@@ -6,21 +6,21 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(24, 13, 13);
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(10px);
     color: #ffffff;
     padding: 20px;
     margin-bottom: 80px;
-    border-radius: 8px;
+    border-radius: 15%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Aliniază orizontal în centru */
-    align-items: center; /* Aliniază vertical în centru */
-    border-radius: 15%;
+    justify-content: center;
+    align-items: center;
 }
 
-.input {
+.input{
     width: 60%;
     margin-top: 40px;
     margin-bottom: 80px;
@@ -28,31 +28,29 @@
     color: black;
     border: 1px solid #ccc;
     border-radius: 4px;
-    
 }
 
-.input_correct {
-    background-color: #69e26d;
-    color: black;
+.input_correct{
+    background-color: rgb(121, 217, 131);
     width: 60%;
     margin-top: 40px;
     margin-bottom: 80px;
     padding: 10px;
+    color: black;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
 .input_incorrect {
-    background-color: #e26969;
+    background-color: rgb(227, 100, 100);
     width: 60%;
-    color: black;
     margin-top: 40px;
     margin-bottom: 80px;
     padding: 10px;
+    color: black;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
 
 
 .button-container {
@@ -62,14 +60,29 @@
     width: 100%;
 }
 
-.verify, .close  ,.next{
+.verify, .close, .next {
     background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 15px;
-    padding: 10px 60px;
-    margin-left: 30ox;
-    border-radius: 4px;
+    padding: 10px 20px;
     margin: 0 10px;
     cursor: pointer;
+    flex: 1;
+    min-width: 0; /* Prevents flex items from not respecting container boundaries */
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+/* Media Queries for better responsive behavior */
+@media (max-width: 768px) {
+    .popup {
+        width: 90%; 
+        font-size: 16px; 
+        padding: 15px; 
+    }
+    .input, .input_correct, .input_incorrect {
+        width: 100%; 
+    }
+    .verify, .close, .next {
+        padding: 10px 10px; 
+    }
 }
